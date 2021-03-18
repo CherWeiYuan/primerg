@@ -7,6 +7,12 @@
 #  Output: Excel sheet of primers and amplicons per targeted site; 
 #          unique ones are marked with "1" in adjacent column
 
+#  Programme outline in default mode: 
+#          Process gRNAs in fasta file into a list > List all possibilities of gRNA (+ PAM/PAM-less) >
+#          Find position of gRNA (+ PAM/PAM-less)  > Define region for paired-end sequencing (default: 140 bp up/downstream of cleavage site)
+#          Design primers with Primer3 within region > Identify unique primers/ amplicons > Filter for unspecific primers (in development)
+#          Export excel sheet 
+
 #  Caveats: [1] Amplicons can be derived from copies of targeted genes elsewhere in the genome (not included as input).
 #               Problem: filtered reads belong to two genes instead of just the targeted gene.
 #               Solution: Check if targeted genes have copies via BLAST. 
