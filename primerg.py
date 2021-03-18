@@ -1,5 +1,5 @@
 ## Primerg (primer3 for gRNAs)
-#  Finds NGS primers for CRISPR-Cas DSB on continuous genomic region
+#  Finds NGS primers for multiple gRNA hits within a continuous genomic region
 #  Goal:  Find unique NGS primer/ amplicon sequences per targeted site using primer3
 #  Input: (Default settings) [1] gRNA list as fasta, [2] continuous genome seq as fasta and 
 #                            [3] directory to fasta files 
