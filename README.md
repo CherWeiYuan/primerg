@@ -29,3 +29,29 @@ Output: Excel sheet of primers and amplicons per targeted site; unique ones are 
 
   [2] Specificity of primers assume to be within genomic template because for NGS we generally perform two PCRs.
       First PCR (~1000-1200 bp amplicon) increases specificity of second PCR (~250-280 bp); primers of second PCR is designed in Primerg. 
+
+## Guide
+
+# System requirements 
+  Ubuntu 20.04, with the following packages installed:
+  Python 3.8.5 on Linux 
+  BLAST 2.9.0+ on Linux    (sudo apt-get install ncbi-blast+)
+  primer3 2.4.0-2 on Linux (sudo apt-get install primer3)
+
+# Python packages
+  Install the following packages with pip3 on Ubuntu terminal
+  Biopython 1.7.8
+  primer3 0.6.1
+  pandas 0.25.3
+  
+# Quick start 
+  1. Move script, genomic template fasta and fasta of gRNA sequences into the same folder
+  2. Edit parameters in script ("Required input" and "Optional input")
+  3. On the Ubuntu terminal, enter "python3 primerg.py"
+  4. Retrieve the output in the same folder
+ 
+# Troubleshooting 
+  1. "OSError: Unrecognized base in input sequence" | Convert any non-ATCG bases (e.g. N/R) in genomic template or gRNA fasta into A/T/C/G. 
+
+# Useful manual:
+  Arguments for Primer3 command line: http://primer3.org/manual.html
