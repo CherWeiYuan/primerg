@@ -9,7 +9,9 @@ primerg designs primers per Cas9-targeted locus using primer3; subsequently, pri
 
 ## Primerg (primer3 for gRNAs)
 Finds NGS primers for multiple gRNA hits within a continuous genomic region
+
 Goal:  Find unique NGS primer/ amplicon sequences per targeted site using primer3
+
 Input: (Default settings) [1] gRNA list as fasta, [2] continuous genome seq as fasta and [3] directory to fasta files 
 
 Output: Excel sheet of primers and amplicons per targeted site; unique ones are marked with "1" in adjacent column
