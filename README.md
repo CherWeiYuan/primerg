@@ -53,7 +53,7 @@ Caveats
   primer3 0.6.1
   pandas 0.25.3
   
-## Quick start 
+# How to run primerg?
   1. Move script, genomic template fasta and fasta of gRNA sequences into the same folder
   2. Edit parameters in script ("Required input" and "Optional input")
   3. On the Ubuntu terminal, enter "python3 primerg.py"
