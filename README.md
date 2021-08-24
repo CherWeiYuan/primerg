@@ -29,7 +29,7 @@ Programme outline in default mode:
   Generate list of all possible amplicons made by the primer, which can be aligned in the future to find signature motif of desired amplicon if necessary >
   BLAST to check if desired amplicon is unique or not > Output as excel sheet
 
-Caveats
+Caveats:
   [1] Amplicons can be derived from copies of targeted genes elsewhere in the genome (not included as part of user-supplied genomic template fasta).
       Problem: filtered reads belong to two genes instead of just the targeted gene.
       Solution: Check if targeted genes have copies via BLAST. 
