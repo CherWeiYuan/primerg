@@ -22,7 +22,8 @@ Output: Excel sheet of all primer3-generated primers and their amplicons per tar
 
 ![Alt text](algorithm_map.png?raw=true)
 
-Programme outline in default mode: 
+Programme outline in default mode:
+ 
   Process gRNAs in fasta file into a list > List all possibilities of gRNA (+ PAM/PAM-less) >
   Find position of gRNA (+ PAM/PAM-less)  > Define region for paired-end sequencing (default: 150 bp up/downstream of cleavage site) >
   Design primers with Primer3 within region > BLAST each primer against continuous genome template to define unspecific primers >
@@ -30,6 +31,7 @@ Programme outline in default mode:
   BLAST to check if desired amplicon is unique or not > Output as excel sheet
 
 Caveats:
+
   [1] Amplicons can be derived from copies of targeted genes elsewhere in the genome (not included as part of user-supplied genomic template fasta).
       Problem: filtered reads belong to two genes instead of just the targeted gene.
       Solution: Check if targeted genes have copies via BLAST. 
