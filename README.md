@@ -20,6 +20,8 @@ Input: (Default settings) [1] gRNA list as fasta, [2] continuous genome seq as f
 
 Output: Excel sheet of all primer3-generated primers and their amplicons per targeted site; specific primers and primers generating unique amplicons are marked with "1" in the respective columns
 
+![Alt text](CherWeiYuan/primerg/algorithm_map.jpg?raw=true)
+
 Programme outline in default mode: 
   Process gRNAs in fasta file into a list > List all possibilities of gRNA (+ PAM/PAM-less) >
   Find position of gRNA (+ PAM/PAM-less)  > Define region for paired-end sequencing (default: 150 bp up/downstream of cleavage site) >
