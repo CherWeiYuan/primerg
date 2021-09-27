@@ -53,8 +53,11 @@ Openpyxl for python3
 ```cd /mnt/c/Users/cherw/Desktop/PRIMERg```
 5.	```python3 primerg.py```
 
+Note: PRIMERg can output a Pandas DataFrame instead of an excel sheet. If you wish to do so, change output_excel variable in primerg.py to False.
+
 ## Interpreting output
-Columns:
+Columns of output excel sheet:
+
 cleavage_pos	| Expected Cas9 cleavage position on user-supplied genomic template 
 
 gRNA_pam	| gRNA + PAM sequence
