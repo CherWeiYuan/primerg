@@ -24,8 +24,11 @@ PRIMERg runs on Linux. For Windows users, you can download Ubuntu (tested on Ubu
 
 Python 3.8.5  on Linux 
 
+Before running the rest of the codes here on Linux, update the package list:
+```sudo apt update```
+
 BLAST 2.9.0+ on Linux 
-```sudo apt update``` then ```sudo apt-get install ncbi-blast+```
+ ```sudo apt-get install ncbi-blast+```
 
 Primer3 2.4.0-2 on Linux 
 ```sudo apt-get install primer3```
