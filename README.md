@@ -23,20 +23,25 @@ PRIMERg will design specific primers, if possible. The uniqueness of the second 
 PRIMERg runs on Linux. For Windows users, you can download Ubuntu (tested on Ubutun 20.04 but new versions should work. Installation guide: https://ubuntu.com/tutorials/ubuntu-on-windows#1-overview)
 
 Python 3.8.5  on Linux 
+
 BLAST 2.9.0+ on Linux 
-‘’’sudo apt updat 
-sudo apt-get install ncbi-blast+"’
+```sudo apt-get install ncbi-blast+```
+
 Primer3 2.4.0-2 on Linux 
-‘’’ sudo apt-get install primer3’’’
+```sudo apt-get install primer3```
+
 Primer3 wrapper for python3 
-‘’’sudo apt install python3-pip
-pip install primer3-py’’’
+```sudo apt install python3-pip```
+```pip install primer3-py```
+
 Biopython for python3 
-‘’’pip install biopython’’’
+```pip install biopython```
+
 pandas for python3 
-‘’’pip install pandas’’’
+```pip install pandas```
+
 Openpyxl for python3
-‘’’pip install openpyxl’’’
+```pip install openpyxl```
 
 
 ## Quick start
