@@ -16,7 +16,7 @@ PRIMERg will design specific primers, if possible. The uniqueness of the second 
 
 
 ## PRIMERg algorithm
-![Alt text](./image/algorithm_map.png?raw=true)
+![Alt text](image/algorithm_map.png?raw=true)
 
 
 ## Installations
