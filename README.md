@@ -29,7 +29,7 @@ All primer design starts with primer3, so they are theoretically optimized. PRIM
 ## Installations
 PRIMERg runs on Linux. For Windows users, you can download Ubuntu (tested on Ubutun 20.04 but new versions should work. Installation guide: https://ubuntu.com/tutorials/ubuntu-on-windows#1-overview)
 
-Python 3.8.5  on Linux 
+Python 3.8.5  on Linux (Confirm that Python3 is already install with ```python3 --version```. If you need to update your python version, do: ```sudo apt update```, ```sudo apt upgrade```, then ```sudo apt upgrade python3```)
 
 Before running the rest of the codes here on Linux, update the package list:
 ```sudo apt update```
