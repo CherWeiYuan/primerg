@@ -53,6 +53,17 @@ Openpyxl for python3
 ‘’’cd /mnt/c/Users/cherw/Desktop/PRIMERg’’’
 4.	‘’’python3 primerg.py’’’
 
+## Interpreting output
+Columns:
+ cleavage_pos	| Expected Cas9 cleavage position on user-supplied genomic template
+ gRNA_pam	| gRNA + PAM sequence
+ F1	| Forward primer for first PCR
+ R1 | Reverse primer for first PCR
+ F2	| Forward primer for second PCR
+ R2	| Reverse primer for second PCR
+ unique_F2	| If second PCR forward primer is unique (sequence from 3' end of primer to the 150th position cannot be found anywhere else in the genome), value = 1. Otherwise 0.
+ unique_R2 | If second PCR reverse primer is unique (sequence from 3' end of primer to the 150th position cannot be found anywhere else in the genome), value = 1. Otherwise 0.
+
 
 ## Caveats:
   [1] Amplicons can be derived from copies of targeted genes elsewhere in the genome (not included as part of user-supplied genomic template fasta).
