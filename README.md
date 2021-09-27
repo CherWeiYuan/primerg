@@ -82,19 +82,6 @@ unique_F2	| If second PCR forward primer is unique (sequence from 3' end of prim
 unique_R2 | If second PCR reverse primer is unique (sequence from 3' end of primer to the 150th position cannot be found anywhere else in the genome), value = 1. Otherwise 0.
 
 
-## Caveats:
-  [1] Amplicons can be derived from copies of targeted genes elsewhere in the genome (not included as part of user-supplied genomic template fasta).
-      Problem: filtered reads belong to two genes instead of just the targeted gene.
-      Solution: Check if targeted genes have copies via BLAST. 
-      Concatenate the copies to the continuous genome fasta file supplied to PRIMERg.
-
-  [2] "Specificity" of primers is evaluated based on the user-supplied genomic template only without regard for the remaining genomic sequences. 
-      Problem: Primers deemed as "specific" in PRIMERg might bind to other areas of the genome.
-      Solution: To increase specificity of the deep-sequencing primers, run a first PCR to generate a 800-2000 bp amplicon that flanks the gRNA binding site. Then, run a second                 PCR with the deep-sequencing primers and use the 800-2000 bp amplicon as template. The two-step PCR first restricts the genomic template and increases hence 
-                increase specificity for the second PCR that generates the NGS amplicon. Primers for both PCRs can be designed with PRIMERg (for first PCR, set  
-                primer_product_size_range = [800, 2000]; for second PCR, set primer_product_size_range = [250, 280] or whichever values that is suitable for your NGS system).
-
-
 ## Troubleshooting 
   1. "OSError: Unrecognized base in input sequence" | Convert any non-ATCG bases (e.g. N/R) in the genomic template or gRNA fasta into A/T/C/G. 
   2. Primer designed produces multiple bands in PCR | See caveat [2] above. Also, try diluting the DNA template 100-fold before use in PCR.
