@@ -55,14 +55,21 @@ Openpyxl for python3
 
 ## Interpreting output
 Columns:
- cleavage_pos	| Expected Cas9 cleavage position on user-supplied genomic template
- gRNA_pam	| gRNA + PAM sequence
- F1	| Forward primer for first PCR
- R1 | Reverse primer for first PCR
- F2	| Forward primer for second PCR
- R2	| Reverse primer for second PCR
- unique_F2	| If second PCR forward primer is unique (sequence from 3' end of primer to the 150th position cannot be found anywhere else in the genome), value = 1. Otherwise 0.
- unique_R2 | If second PCR reverse primer is unique (sequence from 3' end of primer to the 150th position cannot be found anywhere else in the genome), value = 1. Otherwise 0.
+cleavage_pos	| Expected Cas9 cleavage position on user-supplied genomic template 
+
+gRNA_pam	| gRNA + PAM sequence
+
+F1	| Forward primer for first PCR
+
+R1 | Reverse primer for first PCR
+
+F2	| Forward primer for second PCR
+
+R2	| Reverse primer for second PCR
+
+unique_F2	| If second PCR forward primer is unique (sequence from 3' end of primer to the 150th position cannot be found anywhere else in the genome), value = 1. Otherwise 0.
+
+unique_R2 | If second PCR reverse primer is unique (sequence from 3' end of primer to the 150th position cannot be found anywhere else in the genome), value = 1. Otherwise 0.
 
 
 ## Caveats:
