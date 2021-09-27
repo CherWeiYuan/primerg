@@ -3,11 +3,15 @@ Designs deep-sequencing/ NGS primers to assess editing outcomes from multiple gR
 
 
 ## Background and problem definition
-Members from the same gene cluster can perform redundant functions. Functional knock-out of genes within a cluster using CRISPR-Cas9 is an approach to evaluate the role of such genes. The bioinformatic support for the design of gRNAs to achieve multi-gene knock-out is currently available: e.g. Multitargeter: https://multicrispr.net/. The subsequent step after the CRISPR-Cas9 knock-out experiment is the confirmation of mutation at Cas9 cleavage sites by deep-sequencing. 
+Members from the same gene cluster can perform redundant functions. Functional knock-out of multiple genes within a gene cluster using CRISPR-Cas9 is an approach to evaluate the role of such genes. The bioinformatic support for the design of gRNAs to achieve multi-gene knock-out is currently available: e.g. Multitargeter: https://multicrispr.net/. The subsequent step after the CRISPR-Cas9 knock-out experiment is the confirmation of mutation at Cas9 cleavage sites by deep-sequencing. 
 
-Deep-sequencing to evaluate the editing status of each gene requires unique amplicons per genomic target site. Hence, ideally, specific primers per genomic target site should be designed. When specific primers are impossible to generate, the next acceptable primer design solution at least ensures that the amplicon sequences derived from different genomic sites contain suitable polymorphism for NGS reads to be assigned to each target. 
+Deep-sequencing to evaluate the editing status of each gene requires specific primers per genomic target site. This is a problem for gene clusters, where each locus (and possibly their intergenic region) is highly similar to each other: primers designed for one locus binds to other sites, for example in RPW8/ HR4 cluster in TueWa1-2 (10 members in gene cluster):
 
-Manual design of unique primers is decreasingly efficient as the number of targeted loci increases, especially when many gene members are (nearly) identical copies of each other. There are currently no bioinformatics solutions to resolve primer design for gene clusters CRISPR-Cas knockout experiments.
+![Alt text](https://raw.githubusercontent.com/CherWeiYuan/primerg/main/image/multiple_binding_sites.png)
+
+Ideally, specific primers per genomic target site should be designed. When specific primers are impossible to generate, the next acceptable primer design solution at least ensures that the amplicon sequences derived from different genomic sites contain suitable polymorphism for NGS reads to be assigned to each target. 
+
+Manual design of unique primers is increasingly difficult as the number of targeted loci increases, especially when many gene members are (nearly) identical copies of each other. There are currently no bioinformatic solutions to resolve primer design for gene clusters CRISPR-Cas knockout experiments.
 
 
 ## PRIMERg as a solution
