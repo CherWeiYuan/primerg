@@ -32,6 +32,7 @@ Primer3 2.4.0-2 on Linux
 
 Primer3 wrapper for python3 
 ```sudo apt install python3-pip```
+
 ```pip install primer3-py```
 
 Biopython for python3 
