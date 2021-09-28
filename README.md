@@ -83,7 +83,7 @@ unique_R2 | If second PCR reverse primer is unique (sequence from 3' end of prim
 
 
 ## Troubleshooting 
-  1. "NA" instead of primers in excel cells | Relax “Optional input” conditions in python script. I personally find reducing "primer_min_GC" from the recommended 40% to 30%     or changing Tm helps to get primers. In certain genomic regions, GC content is low (<30%) so primers under 30 bp is impossible to design. 
+  1. "NA" instead of primers in excel cells | This occurs when there are no suitable primers under the user-defined conditions. Try relaxing “Optional input” conditions in python script. I personally find reducing "primer_min_GC" from the recommended 40% to 30% or changing Tm helps to get primers. In certain genomic regions, GC content is low (<30%) so primers under 30 bp is impossible to design. 
   2. "OSError: Unrecognized base in input sequence" | Convert any non-ATCG bases (e.g. N/R) in the genomic template or gRNA fasta into A/T/C/G. 
   3. Primer designed produces multiple bands in PCR | See caveat [2] above. Also, try diluting the DNA template 100-fold before use in PCR.
   4. I want to include more parameters in primer3 | Refer to the arguments for Primer3 command line (http://primer3.org/manual.html) and implement them in the python script.
