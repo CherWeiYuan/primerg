@@ -17,7 +17,7 @@ Manual design of unique primers is increasingly difficult as the number of targe
 ## PRIMERg as a solution
 PRIMERg can automatically design specific and/ or unique deep-sequencing primers per Cas9-targeted locus in a continuous genome (e.g. sequence consisting of all members of a gene cluster with high sequence similarity). 
 
-Two sets of primers are produced: the first PCR product is large (default: 1200-2000 bp) and flanks the region to be sequenced; the second PCR produces the amplicon to be sequenced (default: 250-280 bp). The purpose of the first PCR is to restrict the template for the second PCR to increase primer specificity. 
+Two sets of primers are produced: the first PCR product is large (default: 1200-2000 bp) and flanks the region to be sequenced, thus providing the template DNA for the second PCR; the second PCR produces the amplicon to be sequenced (default: 250-280 bp). The purpose of the first PCR is to restrict the template for the second PCR to increase primer specificity. 
 
 All primer design starts with primer3, so they are theoretically optimized. PRIMERg will filter the primers to keep the specific ones, if it is possible. The uniqueness of the second PCR primer (whether the amplicon to be sequenced has “unique” SNPs to help differentiate the desired amplicon from others produced by non-specific binding) is checked and marked in the output.
 
